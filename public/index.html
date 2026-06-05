@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Boutique 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Dashboard Boutique 3D</h1></header>
+<main>
+<section id="models-section">
+<h2>Mes modèles</h2>
+<div id="models-list"></div>
+<input type="text" id="model-name" placeholder="Nom modèle">
+<input type="number" id="base-cost" placeholder="Coût base (€)" step="0.01">
+<input type="number" id="time-cost" placeholder="Coût temps (€)" step="0.01">
+<input type="text" id="options" placeholder="Options JSON (ex: {color:['Rouge','Bleu']})">
+<button id="add-model-btn">Ajouter modèle</button>
+</section>
+<section id="orders-section">
+<h2>Créer une commande</h2>
+<select id="model-select"></select>
+<input type="number" id="quantity" placeholder="Quantité" min="1" value="1">
+<input type="text" id="custom-options" placeholder="Options custom (ex: Rouge, PLA)">
+<button id="add-order-btn">Créer commande</button>
+<div id="orders-list"></div>
+<p id="total-sales">Total ventes : 0€</p>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
